@@ -1,5 +1,364 @@
-<a class="btn instagram"
-href="https://instagram.com/"
-target="_blank">
-Instagram
-</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yash | AI & Creative Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #06101f;
+      color: #fff;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: 65px;
+      background: #020914;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 25px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #28aef5;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 13px;
+    }
+
+    nav a:hover {
+      color: #28aef5;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    /* HOME */
+    .home {
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #102b55, #06101f);
+    }
+
+    .home h1 {
+      font-size: 48px;
+      color: #28aef5;
+      margin-bottom: 15px;
+    }
+
+    .home h2 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .home p {
+      max-width: 600px;
+      color: #b8c2d0;
+      line-height: 1.7;
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      margin: 5px;
+      border-radius: 25px;
+      background: #28aef5;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    h2.section-title {
+      color: #28aef5;
+      font-size: 28px;
+      margin-bottom: 35px;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      color: #c0c9d5;
+      line-height: 1.8;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .card {
+      background: #101f38;
+      border: 1px solid #1e385c;
+      border-radius: 14px;
+      padding: 25px;
+      width: 260px;
+      min-height: 130px;
+    }
+
+    .card h3 {
+      color: #28aef5;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #b9c2cf;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .social a {
+      display: inline-block;
+      margin: 7px;
+      padding: 12px 22px;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .instagram {
+      background: #e1306c;
+    }
+
+    .youtube {
+      background: #ff0000;
+    }
+
+    .whatsapp {
+      background: #25d366;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #020914;
+      color: #788494;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      nav {
+        padding: 0 14px;
+      }
+
+      nav a {
+        margin-left: 8px;
+        font-size: 11px;
+      }
+
+      .home h1 {
+        font-size: 38px;
+      }
+
+      .home h2 {
+        font-size: 21px;
+      }
+
+      .card {
+        width: 100%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">YASH</div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- HOME -->
+  <section class="home" id="home">
+
+    <h1>Hi, I'm Yash 👋</h1>
+
+    <h2>AI • Web Design • Video Editing</h2>
+
+    <p>
+      I create modern websites, AI projects, creative designs
+      and engaging video content.
+    </p>
+
+    <div class="buttons">
+      <a class="btn" href="#projects">View My Work</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+      Hi! I'm Yash. I am interested in AI, website design,
+      video editing and creative digital projects.
+      This website is my personal portfolio where I showcase
+      my skills and work.
+    </p>
+
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills">
+
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>
+          Modern and responsive website design.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>AI Tools</h3>
+        <p>
+          Creative work using modern AI tools.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Photo Editing</h3>
+        <p>
+          Creative photo editing and designs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Video Editing</h3>
+        <p>
+          Short videos and social media editing.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>
+          My personal professional portfolio website.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>AI Projects</h3>
+        <p>
+          Creative projects made using AI tools.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Creative Editing</h3>
+        <p>
+          Photo and video editing projects.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <h2 class="section-title">Connect With Me</h2>
+
+    <p style="color:#b9c2cf; margin-bottom:20px;">
+      Follow me and contact me on social media.
+    </p>
+
+    <div class="social">
+
+      <a class="instagram"
+         href="https://instagram.com/"
+         target="_blank">
+         Instagram
+      </a>
+
+      <a class="youtube"
+         href="https://www.youtube.com/@yash_ff_91"
+         target="_blank">
+         YouTube
+      </a>
+
+      <a class="whatsapp"
+         href="https://wa.me/919764621418"
+         target="_blank">
+         WhatsApp
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Yash. All Rights Reserved.
+  </footer>
+
+</body>
+  </html>
